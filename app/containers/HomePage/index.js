@@ -5,14 +5,28 @@
  *
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React from "react";
+import { FormattedMessage } from "react-intl";
+import messages from "./messages";
+import HomeStyle from "./HomeStyles";
+import Section from "../../components/Section";
 
 export default function HomePage() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <HomeStyle>
+      <header>
+        <div id="logo">
+          <FormattedMessage {...messages.header} />
+        </div>
+      </header>
+      <div id="mainBoard">
+        <h2>
+          <FormattedMessage {...messages.boardTitle} />
+        </h2>
+        <article className="sections">
+          <Section messages={messages} />
+        </article>
+      </div>
+    </HomeStyle>
   );
 }

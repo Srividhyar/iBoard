@@ -1,1 +1,5 @@
-[]
+{
+  "app.containers.HomePage.header": "IBoard",
+  "app.containers.HomePage.boardtitle": "Inno Board",
+  "app.containers.HomePage.sectionTitle": "What can be improved"
+}
